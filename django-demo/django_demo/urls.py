@@ -13,6 +13,7 @@ import HelloDjangoApp.views
 urlpatterns = [
     re_path(r'^$', HelloDjangoApp.views.index, name='index'),
     re_path(r'^home$', HelloDjangoApp.views.index, name='home'),
+    re_path(r'^about$', HelloDjangoApp.views.about, name='about')
 
     #path('', views.index, name='home'),
     #path('contact/', views.contact, name='contact'),

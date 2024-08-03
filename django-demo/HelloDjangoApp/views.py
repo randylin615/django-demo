@@ -30,3 +30,13 @@ def index(request): ## ed.2
             'content': " on " + now.strftime("%A, %d %B, %Y at %X")
         }
     )
+
+def about(request):
+    return render(
+        request,
+        "HelloDjangoApp/about.html",
+        {
+            'title': "About HelloDjangoApp",
+            'content': "Example app page for Django."
+        }
+    )
