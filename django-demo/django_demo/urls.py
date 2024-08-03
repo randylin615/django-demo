@@ -7,14 +7,14 @@ from django.urls import path, include, re_path
 from django.contrib import admin
 from django.contrib.auth.views import LoginView, LogoutView
 #from app import forms, views
-from HelloDjangoApp import views
+import HelloDjangoApp.views
 
 
 urlpatterns = [
-    re_path(r'^$', views.index, name='index'),
-    re_path(r'^home$', views.index, name='home'),
+    re_path(r'^$', HelloDjangoApp.views.index, name='index'),
+    re_path(r'^home$', HelloDjangoApp.views.index, name='home'),
 
-    path('', views.index, name='home'),
+    #path('', views.index, name='home'),
     #path('contact/', views.contact, name='contact'),
     #path('about/', views.about, name='about'),
     #path('login/',
