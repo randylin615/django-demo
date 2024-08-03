@@ -5,6 +5,7 @@
     <Name>django-demo</Name>
     <RootNamespace>django-demo</RootNamespace>
     <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <TestFramework>Pytest</TestFramework>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -37,6 +38,9 @@
     <Compile Include="app\views.py" />
     <Compile Include="app\__init__.py" />
     <Compile Include="app\migrations\__init__.py" />
+    <Compile Include="HelloDjangoApp\admin.py" />
+    <Compile Include="HelloDjangoApp\apps.py" />
+    <Compile Include="HelloDjangoApp\migrations\__init__.py" />
     <Compile Include="HelloDjangoApp\models.py" />
     <Compile Include="HelloDjangoApp\tests.py" />
     <Compile Include="HelloDjangoApp\views.py" />
@@ -59,6 +63,7 @@
     <Folder Include="app\templates\app\" />
     <Folder Include="django_demo\" />
     <Folder Include="HelloDjangoApp\" />
+    <Folder Include="HelloDjangoApp\migrations\" />
     <Folder Include="HelloDjangoApp\templates\" />
     <Folder Include="HelloDjangoApp\templates\HelloDjangoApp\" />
   </ItemGroup>
