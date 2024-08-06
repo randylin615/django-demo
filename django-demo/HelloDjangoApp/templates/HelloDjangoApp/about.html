@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+{% extends "HelloDjangoApp/layout.html" %}
 <html>
 
 <head>
@@ -11,6 +11,10 @@
 <body>
     <div><a href="home">Home</a></div>
     {{content}}
+
+    {% block content %}
+    {{ content }}
+    {% endblock %}
 </body>
 
 </html>
